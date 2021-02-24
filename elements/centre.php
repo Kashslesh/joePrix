@@ -4,7 +4,7 @@
     <main>
         <?php $letRandom = random_int(1,5); 
         $vraiPrix = 50000;
-        $prix = strip_tags (($_POST['guess']))?>;
+        $prix = htmlspecialchars(($_POST['guess']))?>;
       <img src="../img/montre1.jpg" alt="une belle montre de luxe" />
       <!-- <img src="../img/montre<?php echo $letRandom?>.jpg" alt="une belle montre de luxe" /> -->
       <form action="index.php" method="post">
